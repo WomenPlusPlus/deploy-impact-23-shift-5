@@ -5,7 +5,36 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "purple-20": '#EADDFF',
+        "purple-50" :'#6750A4',
+        "purple-70": '#381E72',
+        "purple-90": '#21005D',
+        "gray-20":'#E6E0E9',
+        "gray-50":'#E6E0E9',
+        "gray-70":'#CAC5CD',
+        "gray-90":'#938F96',
+        "magenta-40": '#FF6584'
+      },
+      backgroundImage: (theme) => ({
+        "homepage-header": "url('./assets/HomepageHeader.jpg')"
+      }),
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+      },
+      content: {
+        headerGraphics: "url('./assets/HomepageGraphics.png')",
+        whoWeAreVideo: "url('./assets/WhoWeAreVideo.png')",
+        whoWeAreGraphics: "url('./assets/WhoWeAreGraphics.png')",
+
+      }
+    },
+    screens: {
+      xs: "480px",
+      sm: "768px",
+      md: "1060px"
+    }
   },
   plugins: [],
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,4 +10,6 @@ body,
 .app{
     height: 100%;
     width: 100%;
+    font-family: "Roboto", sans-serif;
+    @apply text-purple-90;
 }
