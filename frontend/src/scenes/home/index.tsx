@@ -1,5 +1,4 @@
 import { SelectedPage } from "@/shared/types"
-import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButtonMagenta from "@/shared/ActionButtonMagenta";
 import PowerCoders from "@/assets/PowerCoders.png";
 import DigitalSwitzerland from "@/assets/DigitalSwitzerland.png"
