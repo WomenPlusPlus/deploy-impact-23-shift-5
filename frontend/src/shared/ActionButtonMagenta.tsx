@@ -7,14 +7,14 @@ type Props = {
     setSelectedPage: (value: SelectedPage)=> void;
 }
 
-const ActionButton = ({children, setSelectedPage}: Props) => {
+const ActionButtonMagenta = ({children, setSelectedPage}: Props) => {
   return (
     <AnchorLink
-    className="rounded-full bg-purple-20 px-10 py-2 hover:bg-purple-50 hover:text-white;"
+    className="rounded-full bg-magenta-40 text-white px-10 py-2 hover:bg-purple-20 hover:text-white;"
     onClick={()=> setSelectedPage(SelectedPage.ContactUs)}
     href={`#${SelectedPage.ContactUs}`}
     >{children}</AnchorLink>
   )
 }
 
-export default ActionButton
+export default ActionButtonMagenta

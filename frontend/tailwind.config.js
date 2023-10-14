@@ -18,13 +18,14 @@ export default {
         "magenta-40": '#FF6584'
       },
       backgroundImage: (theme) => ({
-        "homepage-header": "url('./assets/HomepageHeader.jpg')"
+        "homepage-header": "url('./assets/HomepageHeader.png')",
+        "headerGraphics": "url('./assets/HomepageGraphics.png')",
       }),
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
       content: {
-        headerGraphics: "url('./assets/HomepageGraphics.png')",
+       
         whoWeAreVideo: "url('./assets/WhoWeAreVideo.png')",
         whoWeAreGraphics: "url('./assets/WhoWeAreGraphics.png')",
 
