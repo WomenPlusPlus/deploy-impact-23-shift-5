@@ -14,7 +14,7 @@ const Home = ({ setSelectedPage }: Props) => {
   return (
     <section
     id="home"
-    className="gap-16 bg-purple-50 md:h-full md:pb-0">
+    className="gap-16 bg-purple-50 md:h-auto md:pb-0">
     {/* IMAGE AND MAIN HEADER */}
     <div className="flex flex-row bg-homepage-header bg-no-repeat bg-cover py-20"> 
         <div className="flex flex-col w-2/12 bg-headerGraphics bg-no-repeat bg-contain mx-10">

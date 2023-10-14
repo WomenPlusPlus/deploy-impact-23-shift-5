@@ -20,15 +20,13 @@ export default {
       backgroundImage: (theme) => ({
         "homepage-header": "url('./assets/HomepageHeader.png')",
         "headerGraphics": "url('./assets/HomepageGraphics.png')",
+        "whoWeAreGraphics": "url('./assets/WhoWeAreGraphics.png')",
       }),
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
-      content: {
-       
-        whoWeAreVideo: "url('./assets/WhoWeAreVideo.png')",
-        whoWeAreGraphics: "url('./assets/WhoWeAreGraphics.png')",
-
+      content: {   
+        whoWeAreGraphics: "url('./assets/WhoWeAreGraphics.png')"
       }
     },
     screens: {
