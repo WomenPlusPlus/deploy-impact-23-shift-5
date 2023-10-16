@@ -2,10 +2,14 @@ import WhoWeAreVideo from "@/assets/WhoWeAreVideo.png";
 import TargetIcon from "@/assets/fa-bullseye.png";
 import CroptIcon from "@/assets/fa-crop.png";
 import DiamondIcon from "@/assets/fa-diamond.png";
+import ActionButtonMagenta from "@/shared/ActionButtonMagenta";
+import { SelectedPage } from "@/shared/types";
 
-type Props = {}
+type Props = {
+    setSelectedPage: (value: SelectedPage) => void;
+}
 
-const AboutUs = (props: Props) => {
+const AboutUs = ({ setSelectedPage }: Props) => {
   return (
     <section id="about-us" className="bg-white flex flex-col justify-center items-center md:h-auto md:w-full md:pb-0 md:px-40">
         <div className="flex flex-col w-10/12 md:flex-row md:w-full md:gap-8 md:p-10 ">
@@ -31,7 +35,7 @@ const AboutUs = (props: Props) => {
                     </div>
                     <div className="flex flex-row"><p className="text-gray-70">EntryTech Hub promotes diversity and inclusivity by partnering with associations dedicated to creating a more equitable tech industry.</p></div>
                 </div>
-                <div className="flex flex-col md:w-4/12 ">
+                <div className="flex flex-col md:w-4/12">
                     <div className="flex flex-row items-center gap-4 py-4">
                         <div className="flex flex-col"><img src={CroptIcon}/></div>
                         <div className="flex flex-col"><p className="text-purple-90">Skill Empowerment</p></div>
@@ -42,10 +46,12 @@ const AboutUs = (props: Props) => {
                         <div className="flex flex-col"><p className="text-purple-90"> Impactful Results</p></div>
                     </div>
                     <div className="flex flex-row"><p className="text-gray-70">Our track record includes success stories of job seekers landing life-changing roles and companies finding top talent that aligns with their values.</p></div>
-                </div>
-                <div className="flex flex-row w-full h-48 md:flex-col md:w-4/12 md:h-auto bg-whoWeAreGraphics bg-no-repeat bg-contain "></div>
-        </div>       
-
+                </div>   
+                <div className="flex flex-row w-full md:flex-col  md:w-4/12 md:h-auto md:bg-whoWeAreGraphics bg-no-repeat bg-contain "></div>
+        </div>   
+        <div className="flex flex-row w-10/12 py-10 md:w-full md:p-10">
+                    <ActionButtonMagenta setSelectedPage={setSelectedPage}>Signup Now</ActionButtonMagenta>
+        </div> 
     </section>
   )
 }

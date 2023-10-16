@@ -17,10 +17,10 @@ const Home = ({ setSelectedPage }: Props) => {
     className="gap-16 bg-purple-50 md:h-auto md:pb-0">
     {/* IMAGE AND MAIN HEADER */}
     <div className="flex flex-row bg-homepage-header bg-no-repeat bg-cover py-20"> 
-        <div className="flex flex-col w-2/12 bg-headerGraphics bg-no-repeat bg-contain mx-10">
+        <div className="flex flex-col md:w-1/12 md:bg-headerGraphics bg-no-repeat bg-contain mx-5 md:mx-10">
         </div>
             {/* MAIN HEADER */}
-            <div className="flex flex-col w-9/12">
+            <div className="flex flex-col w-11/12">
                 {/* HEADINGS */}
                 <div className="flex flex-row 0">
                     <h1 className="text-3xl font-bold text-white py-2">JOIN THE INCLUSIVE </h1>
@@ -35,15 +35,15 @@ const Home = ({ setSelectedPage }: Props) => {
                 <ActionButtonMagenta setSelectedPage={setSelectedPage}>Get Started Now</ActionButtonMagenta>
                 </div>
                             {/* LOGOS IMAGE */}
-                <div className="flex flex-col gap-4 align-middle md:flex-row">
-                    <div className="flex flex-col justify-center w-5/12">
-                        <img className="w-8/12" src={PowerCoders}/>
+                <div className="flex flex-row gap-2 align-middle items-center md:flex-row md:align-middle md:w-4/12">
+                    <div className="flex flex-row justify-center  w-4/12">
+                        <img className="" src={PowerCoders}/>
                     </div>
-                    <div className="flex flex-col justify-center w-5/12">
-                        <img className="w-8/12" src={DigitalSwitzerland}/>
+                    <div className="flex flex-row justify-center w-4/12">
+                        <img className="" src={DigitalSwitzerland}/>
                     </div>
-                    <div className="flex flex-col justify-center w-5/12">
-                        <img className="w-8/12" src={WomenPlusPlus}/>
+                    <div className="flex flex-row justify-center w-4/12">
+                        <img className="-mx-44" src={WomenPlusPlus}/>
                     </div>
                 </div>
             </div>
