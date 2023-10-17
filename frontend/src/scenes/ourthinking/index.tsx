@@ -10,7 +10,7 @@ type Props = {
 
 const OurThinking = ({setSelectedPage}: Props) => {
   return (
-    <section className="flex flex-col item-center bg-gray-100 md:flex-row p-10 md:p-20">
+    <section id="ourthinking" className="flex flex-col item-center bg-gray-100 md:flex-row p-10 md:p-20">
       <div className="flex flex-col md:flex-row md:w-full ">
         {/* IMAGE */}
         <div className="flex flex-row md:flex-col pb-7 md:pr-20 ">
@@ -62,8 +62,6 @@ const OurThinking = ({setSelectedPage}: Props) => {
           </div>
         </div>
         </div>
-
-
     </section>
     
   )
