@@ -2,6 +2,7 @@ import Navbar from "@/scenes/navbar"
 import Home from "@/scenes/home"
 import AboutUs from "@/scenes/aboutus"
 import AboutPlatform from "@/scenes/aboutplatform"
+import OurThinking from "@/scenes/ourthinking"
 import { useEffect, useState } from "react"
 import { SelectedPage } from "@/shared/types"
 
@@ -29,6 +30,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage}/>
       <AboutUs setSelectedPage={setSelectedPage}/>
       <AboutPlatform setSelectedPage={setSelectedPage}/>
+      <OurThinking setSelectedPage={setSelectedPage}/>
       </div>
       
     </>
