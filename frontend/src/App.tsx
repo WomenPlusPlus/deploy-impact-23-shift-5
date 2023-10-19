@@ -4,6 +4,9 @@ import AboutUs from "@/scenes/aboutus"
 import AboutPlatform from "@/scenes/aboutplatform"
 import OurThinking from "@/scenes/ourthinking"
 import Programs from "@/scenes/programs"
+import JoinTechRev from "./scenes/jointechrev"
+import Footer from "./scenes/footer"
+
 import { useEffect, useState } from "react"
 import { SelectedPage } from "@/shared/types"
 
@@ -33,6 +36,8 @@ function App() {
       <AboutPlatform setSelectedPage={setSelectedPage}/>
       <OurThinking setSelectedPage={setSelectedPage}/>
       <Programs setSelectedPage={setSelectedPage} />
+      <JoinTechRev setSelectedPage={setSelectedPage} />
+      <Footer setSelectedPage={setSelectedPage} />
       </div>
       
     </>

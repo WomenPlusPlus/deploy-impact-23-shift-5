@@ -21,6 +21,7 @@ export default {
         "homepage-header": "url('./assets/HomepageHeader.png')",
         "headerGraphics": "url('./assets/HomepageGraphics.png')",
         "whoWeAreGraphics": "url('./assets/WhoWeAreGraphics.png')",
+        "JoinTechRevolution": "url('./assets/JoinTechRevolution.png')",
       }),
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
