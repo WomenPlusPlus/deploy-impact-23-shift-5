@@ -1,11 +1,9 @@
-import React from 'react'
-
 type Props = {}
 
-const Login:React.FC<{}> = (props: Props) => {
+const Login = (props: Props) => {
   return (
-    <div>Login:React.FC</div>
+    <div>Login</div>
   )
 }
 
-export default Login;
+export default Login

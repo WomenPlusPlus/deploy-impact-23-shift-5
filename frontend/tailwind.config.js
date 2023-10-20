@@ -22,6 +22,7 @@ export default {
         "headerGraphics": "url('./assets/HomepageGraphics.png')",
         "whoWeAreGraphics": "url('./assets/WhoWeAreGraphics.png')",
         "JoinTechRevolution": "url('./assets/JoinTechRevolution.png')",
+        "LoginRight": "url('./assets/loginGraphic.png')",
       }),
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

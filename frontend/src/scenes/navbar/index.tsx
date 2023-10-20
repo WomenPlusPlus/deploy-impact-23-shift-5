@@ -5,7 +5,8 @@ import Link from "./Link"
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import LogoBlack from "@/assets/logo_Black_Small.svg"
 
 type Props = {
     isTopOfPage: boolean;
@@ -19,6 +20,9 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
     const navbarBackground = isTopOfPage ? "" : "";
     const navigate = useNavigate()
+    const location = useLocation();
+
+    const isHomepage = location.pathname === "/";
 
 
     return (
@@ -27,7 +31,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
             <div className={`${flexBetween} mx-auto w-5/6`}>
               <div className={`${flexBetween} w-full gap-16`}>
                 {/* LEFT SIDE */}
-                <img onClick={()=>{navigate("/")}} className="h-4 w-auto cursor-pointer" alt="logo" src={Logo} />
+                <img onClick={()=>{navigate("/")}} className="h-4 w-auto cursor-pointer" alt="logo"  src={isHomepage ? Logo : LogoBlack} />
       
                 {/* RIGHT SIDE */}
                 {isAboveMediumScreens ? (
@@ -42,7 +46,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                     <div className={`${flexBetween} gap-8`}>
                       <p onClick={()=>{
                         navigate("/signup")
-                      }} className="cursor-pointer">Sign in</p>
+                      }} className="cursor-pointer">Sign up</p>
                       <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
                     </div>
                   </div>
