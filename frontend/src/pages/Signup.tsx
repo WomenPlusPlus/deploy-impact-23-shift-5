@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ActionButtonTransparentBlack from '@/shared/ActionButtonTransparentBlack';
 import GoogleIcon from '@/assets/GoogleIcon.png';
-import Field from '@/shared/field';
+import Field from '@/shared/Field';
 import ActionButtonTransparentPurple from '@/shared/ActionButtonTransparentPurple';
 import LoginDrawing from '@/assets/LoginDrawing.png'
 
