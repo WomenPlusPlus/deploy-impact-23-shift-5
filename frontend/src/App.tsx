@@ -1,20 +1,16 @@
-import Navbar from "@/scenes/navbar"
-import Home from "@/scenes/home"
-import AboutUs from "@/scenes/aboutus"
-import AboutPlatform from "@/scenes/aboutplatform"
-import OurThinking from "@/scenes/ourthinking"
-import Programs from "@/scenes/programs"
-import JoinTechRev from "./scenes/jointechrev"
-import Footer from "./scenes/footer"
-
-import { useEffect, useState } from "react"
+import Navbar from "./scenes/navbar"
+import Home from "./pages/Home"
+import Login from "./pages/Login"
+import Signup from "./pages/Signup"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { SelectedPage } from "@/shared/types"
-
+import { useEffect, useState } from "react"
+import Footer from "./scenes/footer"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true)
-
+  
   useEffect(()=>{
     const handleScroll = () => {
       if (window.screenY === 0){
@@ -26,18 +22,20 @@ function App() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
-
   return (
     <>
       <div className="app">
-      <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-      <Home setSelectedPage={setSelectedPage}/>
-      <AboutUs setSelectedPage={setSelectedPage}/>
-      <AboutPlatform setSelectedPage={setSelectedPage}/>
-      <OurThinking setSelectedPage={setSelectedPage}/>
-      <Programs setSelectedPage={setSelectedPage} />
-      <JoinTechRev setSelectedPage={setSelectedPage} />
-      <Footer setSelectedPage={setSelectedPage} />
+        <BrowserRouter>
+            <Navbar isTopOfPage={isTopOfPage} setSelectedPage={setSelectedPage} selectedPage={selectedPage}/>
+            <div>
+            <Routes>
+              <Route path="/" element={<Home isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>}/>
+              <Route path="/signup" element={<Signup/>}/>
+              <Route path="/login" element={<Login/>}/>
+            </Routes>
+            </div>
+            <Footer setSelectedPage={setSelectedPage} /> 
+        </BrowserRouter>
       </div>
       
     </>
