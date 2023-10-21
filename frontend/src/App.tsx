@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { SelectedPage } from "@/shared/types"
 import { useEffect, useState } from "react"
 import Footer from "./scenes/footer"
+import PasswordRecovery from "./pages/Passwordrecovery"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
@@ -32,6 +33,7 @@ function App() {
               <Route path="/" element={<Home isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>}/>
               <Route path="/signup" element={<Signup/>}/>
               <Route path="/login" element={<Login/>}/>
+              <Route path="/password-recovery" element={<PasswordRecovery/>}/>
             </Routes>
             </div>
             <Footer setSelectedPage={setSelectedPage} /> 

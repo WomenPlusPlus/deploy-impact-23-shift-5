@@ -78,7 +78,8 @@ const Login:React.FC = () => {
             onChange={handlePasswordChange as (value: string | React.ChangeEvent<HTMLInputElement>) => void}
         />
         </div>
-        <ActionButtonTransparentPurple></ActionButtonTransparentPurple>
+        <p className=''>Forgot your password? <span className='font-bold cursor-pointer' onClick={()=>{navigate("/password-recovery")}} >Recover password</span></p>
+        <ActionButtonTransparentPurple>Login</ActionButtonTransparentPurple>
         <p className=''>Not registered yet? <span className='font-bold cursor-pointer' onClick={()=>{navigate("/signup")}} >Create an account</span></p>
         </div>  
     </form>
