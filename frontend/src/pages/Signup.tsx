@@ -4,12 +4,14 @@ import GoogleIcon from '@/assets/GoogleIcon.png';
 import Field from '@/shared/Field';
 import ActionButtonTransparentPurple from '@/shared/ActionButtonTransparentPurple';
 import LoginDrawing from '@/assets/LoginDrawing.png'
+import { useNavigate } from 'react-router-dom';
 
 const Signup:React.FC = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
+  const navigate = useNavigate()
 
   const handleFirstNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFirstName(event.target.value);
@@ -47,6 +49,11 @@ const Signup:React.FC = () => {
             <img src={GoogleIcon} alt="Google Icon" />
             Sign in with Google
           </ActionButtonTransparentBlack>
+          <div className='flex flex-row justify-center'>
+          <div className='flex flex-col border-b-[0.5px] h-3 border-black w-6/12'></div>
+          <p className='flex flex-col px-4 text-gray-90'>OR</p>
+          <div className='flex flex-col border-b-[0.5px] h-3 border-black w-6/12'></div>
+          </div>
         <div className='flex flex-row gap-x-4'>
           <Field
             label="First Name"
@@ -88,7 +95,7 @@ const Signup:React.FC = () => {
         <div className='flex flex-row gap-2'>
         <input type='checkbox'/><p>I agree with <span className='font-bold'>Terms of service</span> and <span className='font-bold'>Privacy and Policy</span></p></div>
         <ActionButtonTransparentPurple></ActionButtonTransparentPurple>
-        <p className=''>Already have an account? <span className='font-bold'>Login</span></p>
+        <p className=''>Already have an account? <span className='font-bold cursor-pointer' onClick={()=>{navigate('/login')}}>Login</span></p>
         </div>  
     </form>
     {/* LEFT PART */}

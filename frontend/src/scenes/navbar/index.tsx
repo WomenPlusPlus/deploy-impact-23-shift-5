@@ -29,13 +29,13 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         <nav>
           <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
             <div className={`${flexBetween} mx-auto w-5/6`}>
-              <div className={`${flexBetween} w-full gap-16`}>
+              <div className={`${flexBetween} w-full gap-16 items-center`}>
                 {/* LEFT SIDE */}
                 <img onClick={()=>{navigate("/")}} className="h-4 w-auto cursor-pointer" alt="logo"  src={isHomepage ? Logo : LogoBlack} />
       
                 {/* RIGHT SIDE */}
                 {isAboveMediumScreens ? (
-                  <div className={`${flexBetween} w-full`}>
+                  <div className={`${flexBetween} w-full items-center`}>
                     <div className={`${flexBetween} gap-8 text-sm`}>
                       <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                       <Link page="About us" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
@@ -43,11 +43,13 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                       <Link page="Program" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                       <Link page="Contact us" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                     </div>
-                    <div className={`${flexBetween} gap-8`}>
+                    <div className={`${flexBetween} gap-8 items-center`}>
                       <p onClick={()=>{
+                        navigate("/login")
+                      }} className="cursor-pointer">Login</p>
+                      <button className="rounded-full bg-purple-20 px-10 py-2 hover:bg-purple-50 hover:text-white;" onClick={()=>{
                         navigate("/signup")
-                      }} className="cursor-pointer">Sign up</p>
-                      <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
+                      }} >Signup</button>
                     </div>
                   </div>
                 ) : (
