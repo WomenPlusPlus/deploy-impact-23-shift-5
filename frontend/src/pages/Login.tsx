@@ -78,8 +78,6 @@ const Login:React.FC = () => {
             onChange={handlePasswordChange as (value: string | React.ChangeEvent<HTMLInputElement>) => void}
         />
         </div>
-        <div className='flex flex-row gap-2'>
-        <input type='checkbox'/><p>I agree with <span className='font-bold'>Terms of service</span> and <span className='font-bold'>Privacy and Policy</span></p></div>
         <ActionButtonTransparentPurple></ActionButtonTransparentPurple>
         <p className=''>Not registered yet? <span className='font-bold cursor-pointer' onClick={()=>{navigate("/signup")}} >Create an account</span></p>
         </div>  
