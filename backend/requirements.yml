@@ -4,3 +4,6 @@ dependencies:
   - pip=23.2.1
   - pip:
       - django==4.2.5
+      - django-cors-headers==4.2.0
+      - djangorestframework==3.14.0
+      - django-cors-headers==4.2.0
