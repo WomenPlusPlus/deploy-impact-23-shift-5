@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios'; 
 import ActionButtonTransparentBlack from '@/shared/ActionButtonTransparentBlack';
 import GoogleIcon from '@/assets/GoogleIcon.png';
 import Field from '@/shared/Field';
@@ -35,6 +36,7 @@ const Signup:React.FC = () => {
   function handleEmailChange(value: string): void {
     throw new Error('Function not implemented.');
   }
+
 
   return (
     <div className="flex flex-row justify-between">
