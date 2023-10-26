@@ -10,7 +10,7 @@ const WelcomeCompanies = (props: Props) => {
                     <h1 className="text-4xl text-center font-bold text-white"><span className="text-magenta-40">EMPOWER</span> YOUR TEAM WITH SKILLED CANDIDATES</h1>
                     <p className="text-lg  text-white">To begin posting jobs and recruiting, please verify your email.</p>
                 </div>
-                <div className="flex flex-row w-full h-[45px] gap-x-4">
+                <div className="flex flex-row w-10/12 h-[45px] gap-x-4">
                     <input type="text" placeholder="Enter your email address" className="border bg-transparent rounded-full w-full text-start text-white px-3" />
                     <button className="bg-magenta-40 rounded-full w-full text-white">Verify</button>
                 </div>
