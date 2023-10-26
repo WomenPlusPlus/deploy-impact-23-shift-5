@@ -7,6 +7,7 @@ import { SelectedPage } from "@/shared/types"
 import { useEffect, useState } from "react"
 import Footer from "./scenes/footer"
 import PasswordRecovery from "./pages/Passwordrecovery"
+import WelcomeCompanies from "./pages/WelcomeCompanies"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
@@ -34,6 +35,7 @@ function App() {
               <Route path="/signup" element={<Signup/>}/>
               <Route path="/login" element={<Login/>}/>
               <Route path="/password-recovery" element={<PasswordRecovery/>}/>
+              <Route path="/welcome-companies" element={<WelcomeCompanies/>}/>
             </Routes>
             </div>
             <Footer setSelectedPage={setSelectedPage} /> 
