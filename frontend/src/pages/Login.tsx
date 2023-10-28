@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import ActionButtonTransparentBlack from '@/shared/ActionButtonTransparentBlack';
 import GoogleIcon from '@/assets/GoogleIcon.png';
 import ActionButtonTransparentPurple from '@/shared/ActionButtonTransparentPurple';
@@ -29,10 +30,28 @@ const Login:React.FC = () => {
     setPassword(event.target.value);
   };
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
-    // You can add code here to handle the form submission, e.g., send data to a server.
+    try {
+      // Define the data to send to the server
+      const data = {
+        username: email, // You can use email as the username, or create a separate username field.
+        password: password,
+      };
+
+      // Make a POST request to your Django backend for user signup
+      const response = await axios.post('http://127.0.0.1:8000/login/', data);
+
+      // Handle the response here, you can navigate the user or show a success message.
+      console.log('Log in success:', response.data);
+      navigate('/');
+      // TODO: add response as a cookie (currently doesn't return as a cookie)
+      // TODO: redirect to candidate page
+    } catch (error) {
+      // Handle errors here, you can show an error message to the user.
+      console.error('Login error:', error);
+    }
   };
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -75,7 +94,7 @@ const Login:React.FC = () => {
         />
         </div>
         <p className=''>Forgot your password? <span className='font-bold cursor-pointer' onClick={()=>{navigate("/password-recovery")}} >Recover password</span></p>
-        <ActionButtonTransparentPurple>Login</ActionButtonTransparentPurple>
+        <button className='bg-purple-50 p-3 rounded-full' onClick={handleSubmit} type="submit">Login</button>
         <p className=''>Not registered yet? <span className='font-bold cursor-pointer' onClick={()=>{navigate("/signup")}} >Create an account</span></p>
         </div>  
     </form>

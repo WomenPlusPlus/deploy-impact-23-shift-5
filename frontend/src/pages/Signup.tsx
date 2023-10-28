@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios'; 
+import axios from 'axios';
 import ActionButtonTransparentBlack from '@/shared/ActionButtonTransparentBlack';
 import GoogleIcon from '@/assets/GoogleIcon.png';
 import LoginDrawing from '@/assets/LoginDrawing.png'
