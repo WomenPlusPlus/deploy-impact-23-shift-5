@@ -1,8 +1,0 @@
-name: shift5
-dependencies:
-  - python=3.11.5
-  - pip=23.2.1
-  - pip:
-      - django==4.2.5
-      - django-cors-headers==4.2.0
-      - djangorestframework==3.14.0

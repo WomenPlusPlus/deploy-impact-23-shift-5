@@ -8,7 +8,7 @@
   </a>
 </div>
 
-<!-- ABOUT THE PROJECT -->
+
 ## About The Project
 <div align="center">
 
@@ -20,15 +20,26 @@ At EntryTech Hub, we are more than just a digital platform. We are a community-d
 </div>
 
 
+## How to run
+### Local run
+1. Clone the repository;
+2. Open terminal
+3. Navigate to the cloned repository's _frontend_ directory
+4. Run `nvm install node`
+5. Run `npm install`
+6. Run `npm run dev`
+7. Open another terminal
+8. Navigate to _backend_ directory
+9. Run `python manage.py runserver`
+10. Visit [127.0.0.1:8000](http://127.0.0.1:8000) on Your browser.
 
-<!-- LICENSE -->
+
 ## License
 
-Distributed under the GNU General Public License v3.0. See `LICENSE.md` for more information.
+Distributed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- BUILT WITH -->
 ### Built With
 
 * ![React][React.js]
