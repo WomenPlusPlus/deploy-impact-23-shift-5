@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import ActionButtonTransparentBlack from '@/shared/ActionButtonTransparentBlack';
-import GoogleIcon from '@/assets/GoogleIcon.png';
-import Field from '@/shared/Field';
 import ActionButtonTransparentPurple from '@/shared/ActionButtonTransparentPurple';
 import LoginDrawing from '@/assets/LoginDrawing.png'
 import { useNavigate } from 'react-router-dom';
@@ -10,12 +7,8 @@ import { useNavigate } from 'react-router-dom';
 const PasswordRecovery:React.FC = () => {
   const [email, setEmail] = useState('');
   const navigate = useNavigate()
+  const fullWidthFieldStyle ="flex flex-row border rounded-md p-4 border-black w-full placeholder:text-black"
 
-
-
-  const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(event.target.value);
-  };
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
@@ -23,9 +16,9 @@ const PasswordRecovery:React.FC = () => {
     // You can add code here to handle the form submission, e.g., send data to a server.
   };
 
-  function handleEmailChange(value: string): void {
-    throw new Error('Function not implemented.');
-  }
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
 
   return (
     <div className="flex flex-row justify-between h-screen">
@@ -36,13 +29,14 @@ const PasswordRecovery:React.FC = () => {
         <div className='flex flex-col align-middle justify-center p-44 gap-5'>
           <h1 className='flex flex-row just text-2xl font-bold'>Forgot your password?</h1>
           <p>Fill in your email and will send you a link for recover!</p>
-        <div className='flex flex-row w-12/12 border'>
-        <Field
-        label="Email"
-        inputType="text"
-        value={email}
-        onChange={handleEmailChange}
-        />
+        <div className='flex flex-row w-12/12'>
+          <input
+          className={fullWidthFieldStyle}
+          placeholder="Email"
+          type="text"
+          value={email}
+          onChange={handleEmailChange}
+          />
         </div>
         <ActionButtonTransparentPurple>Send a Link!</ActionButtonTransparentPurple>
         <p className=''>Wow, you remember it? Please <span className='font-bold cursor-pointer' onClick={()=>{navigate("/login")}} >Login</span></p>

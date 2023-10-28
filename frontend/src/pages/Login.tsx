@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ActionButtonTransparentBlack from '@/shared/ActionButtonTransparentBlack';
 import GoogleIcon from '@/assets/GoogleIcon.png';
-import Field from '@/shared/Field';
 import ActionButtonTransparentPurple from '@/shared/ActionButtonTransparentPurple';
 import LoginDrawing from '@/assets/LoginDrawing.png'
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +12,9 @@ const Login:React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
+
+  
+  const fullWidthFieldStyle ="flex flex-row border rounded-md p-4 border-black w-full placeholder:text-black"
 
   const handleFirstNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFirstName(event.target.value);
@@ -33,9 +35,9 @@ const Login:React.FC = () => {
     // You can add code here to handle the form submission, e.g., send data to a server.
   };
 
-  function handleEmailChange(value: string): void {
-    throw new Error('Function not implemented.');
-  }
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
 
   return (
     <div className="flex flex-row justify-between">
@@ -54,28 +56,22 @@ const Login:React.FC = () => {
           <p className='flex flex-col px-4 text-gray-90'>OR</p>
           <div className='flex flex-col border-b-[0.5px] h-3 border-black w-6/12'></div>
           </div>
-        <div className='flex flex-row gap-x-4'>
-          <Field
-            label="First Name"
-            inputType="text"
-            value={firstName}
-            onChange={handleFirstNameChange as (value: string | React.ChangeEvent<HTMLInputElement>) => void}
-          />
-        </div>
-        <div className='flex flex-row w-12/12 border'>
-        <Field
-        label="Email"
-        inputType="text"
+        <div className='flex flex-row w-12/12 '>
+        <input
+        className={fullWidthFieldStyle}
+        placeholder="Email"
+        type="text"
         value={email}
         onChange={handleEmailChange}
         />
         </div>
         <div className='flex flex-row gap-x-4'>
-        <Field
-            label="Password"
-            inputType="Password"
-            value={password}
-            onChange={handlePasswordChange as (value: string | React.ChangeEvent<HTMLInputElement>) => void}
+        <input
+          className={fullWidthFieldStyle}
+          placeholder="Password"
+          type="Password"
+          value={password}
+          onChange={handlePasswordChange as (value: string | React.ChangeEvent<HTMLInputElement>) => void}
         />
         </div>
         <p className=''>Forgot your password? <span className='font-bold cursor-pointer' onClick={()=>{navigate("/password-recovery")}} >Recover password</span></p>

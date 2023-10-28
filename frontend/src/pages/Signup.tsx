@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios'; 
 import ActionButtonTransparentBlack from '@/shared/ActionButtonTransparentBlack';
 import GoogleIcon from '@/assets/GoogleIcon.png';
-import Field from '@/shared/Field';
 import ActionButtonTransparentPurple from '@/shared/ActionButtonTransparentPurple';
 import LoginDrawing from '@/assets/LoginDrawing.png'
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +12,9 @@ const Signup:React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
+
+  const halfWidthFieldStyle ="flex flex-col w-full border rounded-md border-black p-4 placeholder:text-black "
+  const fullWidthFieldStyle ="flex flex-row border rounded-md p-4 border-black w-full placeholder:text-black"
 
   const handleFirstNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFirstName(event.target.value);
@@ -33,9 +35,9 @@ const Signup:React.FC = () => {
     // You can add code here to handle the form submission, e.g., send data to a server.
   };
 
-  function handleEmailChange(value: string): void {
-    throw new Error('Function not implemented.');
-  }
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
 
 
   return (
@@ -57,41 +59,47 @@ const Signup:React.FC = () => {
           <div className='flex flex-col border-b-[0.5px] h-3 border-black w-6/12'></div>
           </div>
         <div className='flex flex-row gap-x-4'>
-          <Field
-            label="First Name"
-            inputType="text"
+          <input
+            placeholder="First Name"
+            type="text"
             value={firstName}
+            className={halfWidthFieldStyle}
             onChange={handleFirstNameChange as (value: string | React.ChangeEvent<HTMLInputElement>) => void}
           />
 
-          <Field
-            label="Last Name"
-            inputType="text"
+          <input
+            placeholder="Last Name"
+            type="text"
             value={lastName}
+            className={halfWidthFieldStyle}
             onChange={handleLastNameChange as (value: string | React.ChangeEvent<HTMLInputElement>) => void}
           />
+
         </div>
-        <div className='flex flex-row w-12/12 border'>
-        <Field
-        label="Email"
-        inputType="text"
-        value={email}
-        onChange={handleEmailChange}
+        <div className='flex flex-row w-12/12'>
+        <input
+          placeholder="Email"
+          type="email"
+          value={email}
+          className={fullWidthFieldStyle}
+          onChange={handleEmailChange}
         />
         </div>
         <div className='flex flex-row gap-x-4'>
-        <Field
-            label="Password"
-            inputType="Password"
+        <input
+            type="Password"
+            placeholder='Password'
+            className={halfWidthFieldStyle}
             value={password}
             onChange={handlePasswordChange as (value: string | React.ChangeEvent<HTMLInputElement>) => void}
         />
 
-        <Field
-            label="Confirm Password"
-            inputType="Password"
-            value={password}
-            onChange={handlePasswordChange as (value: string | React.ChangeEvent<HTMLInputElement>) => void}
+        <input
+          className={halfWidthFieldStyle}
+          placeholder="Confirm Password"
+          type="Password"
+          value={password}
+          onChange={handlePasswordChange as (value: string | React.ChangeEvent<HTMLInputElement>) => void}
         />
         </div>
         <div className='flex flex-row gap-2'>
