@@ -37,9 +37,6 @@ export function CandidateSidebar() {
  
   return (
     <Card className="h-[calc(100vh)] w-full max-w-[16rem] p-3 shadow-xl shadow-blue-gray-900/5">
-      <div className="mb-2 flex items-center  gap-4 p-3 ">
-        <p className="text-purple-70 font-bold text-{17px} text-center p-1 leading-5.5 font-roboto ml-5">EntryTech Hub</p>
-      </div>
       <div className="mb-2 flex items-center gap-4 p-0 b-2">
       <Avatar src="./src/assets/candidates/EmilyPicture.png" alt="Picture" className="rounded-full  flex-shrink-0 border-purple-70 border-1 h-14.2 w-14.2" />
         <div>

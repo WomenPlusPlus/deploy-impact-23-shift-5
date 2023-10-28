@@ -9,6 +9,7 @@ import Footer from "./scenes/footer"
 import PasswordRecovery from "./pages/Passwordrecovery"
 import WelcomeCompanies from "./pages/WelcomeCompanies"
 import CandidateProfile from "./pages/CandidatesProfile"
+import CompanyProfile from "./pages/CompanyProfile"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
@@ -38,6 +39,7 @@ function App() {
               <Route path="/password-recovery" element={<PasswordRecovery/>}/>
               <Route path="/welcome-companies" element={<WelcomeCompanies/>}/>
               <Route path="/candidate-profile" element={<CandidateProfile/>}/>
+              <Route path="/company-profile" element={<CompanyProfile/>}/>
             </Routes>
             </div>
             <Footer setSelectedPage={setSelectedPage} /> 
