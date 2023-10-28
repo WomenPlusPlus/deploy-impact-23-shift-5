@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'candidate',
     'entryhub_auth',
-    'entryhub_company'
+    'entryhub_company',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -138,7 +139,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Define CORS settings
 CORS_ALLOW_ALL_ORIGINS = True  # Allow requests from any origin for development (configure for production)
-CORS_ALLOWED_ORIGIN = [
-    "host://localhost:5173"
-]
+# CORS_ALLOWED_ORIGIN = [
+#     "http://localhost:5173"
+# ]
 CORS_ALLOW_CREDENTIALS = True  # Allow cookies and credentials to be sent with requests (if needed)
