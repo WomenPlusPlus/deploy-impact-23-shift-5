@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios'; 
 import ActionButtonTransparentBlack from '@/shared/ActionButtonTransparentBlack';
 import GoogleIcon from '@/assets/GoogleIcon.png';
-import ActionButtonTransparentPurple from '@/shared/ActionButtonTransparentPurple';
 import LoginDrawing from '@/assets/LoginDrawing.png'
 import { useNavigate } from 'react-router-dom';
 
@@ -29,14 +28,33 @@ const Signup:React.FC = () => {
     setPassword(event.target.value);
   };
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-
-    // You can add code here to handle the form submission, e.g., send data to a server.
-  };
-
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
+  };
+
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+
+    try {
+      // Define the data to send to the server
+      const data = {
+        username: email, // You can use email as the username, or create a separate username field.
+        password: password,
+        first_name: firstName,
+        last_name: lastName,
+        email: email,
+      };
+
+      // Make a POST request to your Django backend for user signup
+      const response = await axios.post('http://127.0.0.1:8000/signup/', data);
+
+      // Handle the response here, you can navigate the user or show a success message.
+      console.log('Signup success:', response.data);
+      navigate('/login'); // Redirect to the login page after successful signup
+    } catch (error) {
+      // Handle errors here, you can show an error message to the user.
+      console.error('Signup error:', error);
+    }
   };
 
 
@@ -104,7 +122,7 @@ const Signup:React.FC = () => {
         </div>
         <div className='flex flex-row gap-2'>
         <input type='checkbox'/><p>I agree with <span className='font-bold'>Terms of service</span> and <span className='font-bold'>Privacy and Policy</span></p></div>
-        <ActionButtonTransparentPurple></ActionButtonTransparentPurple>
+        <button className='bg-purple-50 p-3 rounded-full' onClick={handleSubmit} type="submit">Signup</button>
         <p className=''>Already have an account? <span className='font-bold cursor-pointer' onClick={()=>{navigate('/login')}}>Login</span></p>
         </div>  
     </form>
