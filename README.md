@@ -31,12 +31,12 @@ At EntryTech Hub, we are more than just a digital platform. We are a community-d
 7. Open another terminal
 8. Navigate to _backend_ directory
 9. Run `python manage.py runserver`
-10. Visit [127.0.0.1:8000](127.0.0.1:8000) on Your browser.
+10. Visit [127.0.0.1:8000](http://127.0.0.1:8000) on Your browser.
 
 
 ## License
 
-Distributed under the GNU General Public License v3.0. See [LICENSE](LICENCE) for more information.
+Distributed under the GNU General Public License v3.0. See [LICENSE](../blob/main/LICENCE) for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
