@@ -36,7 +36,7 @@ At EntryTech Hub, we are more than just a digital platform. We are a community-d
 
 ## License
 
-Distributed under the GNU General Public License v3.0. See [LICENSE](../blob/main/LICENCE) for more information.
+Distributed under the GNU General Public License v3.0. See [LICENSE](../main/LICENCE) for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
