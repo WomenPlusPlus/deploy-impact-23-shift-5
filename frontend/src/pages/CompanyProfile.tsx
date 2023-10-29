@@ -6,6 +6,7 @@ import EditPencilButton from '@/assets/EditPencilButton.png'
 import Switch from '@/assets/Switch.png'
 import LinkedIn from '@/assets/LinkedIn.png'
 import Instagram from '@/assets/Instagram.png'
+import CandidateNavbar from '@/scenes/candidatenavbar'
 
 type Props = {}
 
@@ -13,7 +14,8 @@ const CompanyProfile = (props: Props) => {
   return (
     <div className='flex'>
         <CandidateSidebar/>
-        <div className='flex flex-col w-10/12 items-start align-top bg-slate-50 p-10 pt-28'>
+        <div className="flex flex-wrap"><CandidateNavbar/>
+        <div className='flex flex-col max-md max-w-max items-center align-top bg-slate-50 p-10 pt-28'>
             <div className='flex flex-col w-10/12 rounded-lg gap-y-5'>
                 {/* profile header */}
                 <div className='flex flex-row w-full bg-white rounded-2xl p-4'>
@@ -159,6 +161,7 @@ const CompanyProfile = (props: Props) => {
                 {/* social */}
             </div>
         </div>
+    </div>
     </div>
   )
 }
