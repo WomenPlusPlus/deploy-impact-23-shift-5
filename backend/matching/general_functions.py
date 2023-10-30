@@ -15,7 +15,7 @@ KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml1
 .SS-3bMpGlEIZSDf9BRNmb_u8XvCzm-5J_1WfBtpZOXg"
 supabase: Client = create_client(URL, KEY)
 
-PATH = os.getcwd()
+PATH = os.path.join(os.getcwd(), "backend", "matching")
 HERE_API_KEY = '3kO1RrqyZDXf8hUQLAnU6PIHT2BXN1sd_5EWg1pqOaM'
 NLP_MODEL = spacy.load("en_pipeline")
 SENTENCE_MODEL = SentenceTransformer("eliot-hub/sentence_transformer")  # SentenceTransformer("all-MiniLM-L6-v2")
@@ -298,6 +298,41 @@ def recommend_jobs(candidate_profile, job_ads, top_jobs=3):
     return result[:top_jobs]
 
 
+def recommend_candidates(job_ad, candidate_profiles, top_profiles=3):
+    """
+    Recommend top candidates based on their profile for job advertisements.
+
+    Parameters
+    ----------
+    job_ad (str): The job offer description.
+    candidate_profiles (list of str): A list of candidates descriptions.
+    top_profiles (int, optional): The number of top job candidates to return. Default is 3.
+
+    Returns
+    -------
+    list: A list of recommended candidates as tuples, each containing the candidate description and its similarity score
+    with the job ad. The list is sorted in descending order of similarity.
+
+    Example
+    -------
+    >>> candidate_profile = "Experienced software engineer skilled in Python and Java."
+    >>> job_ads = ["We are looking for a software engineer proficient in Python and Java.", "Data Scientist position available for a Python expert."]
+    >>> recommendation_model = your_pretrained_model  # Replace with the actual model object.
+    >>> recommended_jobs = recommend_jobs(candidate_profile, job_ads, recommendation_model, top_jobs=2)
+    >>> for job, score in recommended_jobs:
+    ...     print(f"Job: {job}\nSimilarity Score: {score}")
+    Job: We are looking for a software engineer proficient in Python and Java.
+    Similarity Score: 0.9123
+    Job: Data Scientist position available for a Python expert.
+    Similarity Score: 0.8456
+    """
+    job_desc = keywords_extraction(job_ad)
+    
+    candidates = [keywords_extraction(candidate) for candidate in candidate_profiles]
+    scores = [similarity_score(candidate_desc, job_desc) for candidate_desc in candidates]
+    result = list(zip(candidates, scores))
+    result.sort(key = lambda x:x[1], reverse=True)
+    return result[:top_profiles]
 
 if __name__ == '__main__':
 
