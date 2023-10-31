@@ -103,6 +103,15 @@ const Signup:React.FC = () => {
           onChange={handleEmailChange}
         />
         </div>
+       {/* USER TYPE SELECTION DROPDOWN */}
+       <div className={`${halfWidthFieldStyle} flex flex-row w-12/12`}>
+          <select id="countries" className="  text-gray-900 text-sm rounded-lg">
+            <option selected>Choose a user type</option>
+            <option value="candidate">Candidate</option>
+            <option value="company">Company</option>
+            <option value="association">Association</option>
+          </select>
+        </div>
         <div className='flex flex-row gap-x-4'>
         <input
             type="Password"
