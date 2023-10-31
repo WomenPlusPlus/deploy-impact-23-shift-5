@@ -17,8 +17,8 @@ supabase: Client = create_client(URL, KEY)
 
 PATH = os.path.join(os.getcwd(), "backend", "matching")
 HERE_API_KEY = '3kO1RrqyZDXf8hUQLAnU6PIHT2BXN1sd_5EWg1pqOaM'
-NLP_MODEL = spacy.load("en_pipeline")
-SENTENCE_MODEL = SentenceTransformer("eliot-hub/sentence_transformer")  # SentenceTransformer("all-MiniLM-L6-v2")
+NLP_MODEL = spacy.load("en_pipeline")  # custom spacy pipeline for NER
+SENTENCE_MODEL = SentenceTransformer("all-MiniLM-L6-v2")  # SentenceTransformer("eliot-hub/sentence_transformer") # custom sentence transformer 
 
 
 def pdf_to_text(fpath):
@@ -216,7 +216,7 @@ def keywords_extraction(text):
     -------
     str: A formatted description that includes the job title, skills, and education information
     extracted from the input text. The format is as follows:
-    "{job_title}. Skills: {comma-separated skills}. Education: {space-separated education}".
+    "{job_title}. Skills: {comma-separated skills}. {space-separated education}".
 
     Example
     -------
@@ -228,7 +228,7 @@ def keywords_extraction(text):
 
     skills = ", ".join(doc_dict["SKILL"]) if len(doc_dict["SKILL"]) else ""
     education = " ".join(doc_dict["DIPLOMA"]) if len(doc_dict["DIPLOMA"]) else ""
-    desc = f"{doc_dict['JOB_TITLE']}. Skills: {skills}. Education: {education}"
+    desc = f"{doc_dict['JOB_TITLE']}. Skills: {skills}. {education}"
     return desc
 
 
