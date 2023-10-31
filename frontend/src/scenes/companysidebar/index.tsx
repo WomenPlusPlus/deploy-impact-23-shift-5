@@ -1,35 +1,38 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Card,
   Avatar,
   Typography,
   List,
   ListItem,
-  ListItemPrefix,
+  ListItemPrefix
 } from "@material-tailwind/react";
+import EntryTechHubLogo from '@/assets/logo_Black_Small.svg'
 
-type CandidateSidebarProps = {
-  switchSection: (section: string) => void;
-};
-
-const CandidateSidebar: React.FC<CandidateSidebarProps> = ({ switchSection }) => {
-  const [open, setOpen] = useState<number>(0);
-  const [openAlert, setOpenAlert] = useState(true);
-
+export function CompanySidebar() {
+  const [open, setOpen] = React.useState(0);
+  const [openAlert, setOpenAlert] = React.useState(true);
+ 
   const handleOpen = (value: React.SetStateAction<number>) => {
     setOpen(open === value ? 0 : value);
   };
-
  
   return (
-    <Card className="h-100vh w-full p-3 shadow-xl shadow-blue-gray-900/5">
-      <div className="mb-2 flex items-center gap-4 p-0 b-2">
-      <Avatar src="./src/assets/candidates/EmilyPicture.png" alt="Picture" className="rounded-full  flex-shrink-0 border-purple-70 border-1 h-14.2 w-14.2" />
-        <div>
-          <Typography variant="h6">Emily</Typography>
-          <Typography variant="small" color="gray" className="font-normal">
-            Web Developer
-          </Typography>
+    <Card className="h-[calc(110vh)] w-12/12 p-3 shadow-xl shadow-blue-gray-900/5">
+      <div className="mb-2 flex-col items-center justify-center gap-4 p-0 b-2">
+        <div className="flex flex-row justify-center p-5">
+          <img className="" src={EntryTechHubLogo} />
+        </div>
+        <div className="flex flex-row justify-center">
+          <div className="flex flex-col pr-4">
+            <Avatar src="./src/assets/SwissComLogo.png" alt="Picture" className="w-[80px] border-purple-70 border-2 rounded-full flex-shrink-01" />
+          </div>
+          <div className="flex flex-col">
+            <Typography variant="h6">Swisscom</Typography>
+            <Typography variant="small" color="gray" className="font-normal">
+              Telecommunications
+            </Typography>
+          </div>
         </div>
       </div>
       <div className="m-2 flex-wrap items-center gap-4 pt-6">
@@ -37,9 +40,7 @@ const CandidateSidebar: React.FC<CandidateSidebarProps> = ({ switchSection }) =>
           <img className="w-5.5 h-5.5 ml-8 mr-1"src="./src/assets/candidates/mail_outline.png"></img>
           Inbox
         </button>
-        <button 
-          onClick={() => switchSection('profile')}
-          className="w-5/6 rounded-full bg-purple-50 p-2 font-bold text-{17px} font-roboto leading-5.5 text-white">Profile</button>
+        <button className="w-5/6 rounded-full bg-purple-50 p-2 font-bold text-{17px} font-roboto leading-5.5 text-white">Profile</button>
       </div>
       <List>
           <hr className="my-2 border-blue-gray-50" />
@@ -72,9 +73,7 @@ const CandidateSidebar: React.FC<CandidateSidebarProps> = ({ switchSection }) =>
               <ListItemPrefix>
                 <img src='./src/assets/candidates/Games.png' className="h-6 w-6 mr-1"/>
               </ListItemPrefix>
-              <Typography 
-                onClick={() => switchSection('mymatches')}
-                className="mr-auto font-bold text-sm/[17px] font-roboto text-purple-70">
+              <Typography className="mr-auto font-bold text-sm/[17px] font-roboto text-purple-70">
                 My Matches
               </Typography>
           </ListItem> 
@@ -108,4 +107,4 @@ const CandidateSidebar: React.FC<CandidateSidebarProps> = ({ switchSection }) =>
   );
 }
 
-export default  CandidateSidebar
+export default  CompanySidebar
