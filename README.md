@@ -98,13 +98,13 @@ This machine learning solution addresses the task of extracting keywords, such a
 ## Components
 1. **NLP Keyword Extraction Model:**
 
-For this task, we have first labeled a dataset, using [doccano](https://github.com/doccano/doccano). The labels annotated are JOB_TITLE, SKILL, EDUCATION. Next, we used SpaCy with DistilBERT transformer to train a custom Name Entity Recognition model on this labeled dataset, enabling it to extract and recognize the designated entities within the text.
+For this task, we have first labeled a dataset, using [doccano](https://github.com/doccano/doccano). The labels annotated are JOB_TITLE, SKILL, EDUCATION. Next, we used SpaCy with DistilBERT transformer to train a custom Name Entity Recognition [model](https://huggingface.co/eliot-hub/en_pipeline) on this labeled dataset, enabling it to extract and recognize the designated entities within the text.
 
 2. **Sentence Transformer Model:**
 
 We used Hugging Face sentence transformer (all-MiniLM-L6-v2) to build a recommendation system between keywords lists from CVs and job ads. This model converts the extracted keywords as embeddings, which are numerical representations of text. These embeddings capture the semantic meaning of the keywords. This model then mesures the similarity between the lists of keywords from resumes and job ads, using cosine similarity. Our matching algorithm selects the pairs of CVs and job ads with the highest similarity.
 
-Furthermore, we embarked on a journey to fine-tune this model. The aim is to label pairs of CV and job ad with our own similarity score, derived from the cosine similarity to optimize the score regarding the mutual skills. The idea of this approach is to simulate a real history of matches between candidates and job ads, and fine tune a model to generalize these matches. This custom however, is still in progress and hasn't yet demonstrated its efficiency. We continue to refine it to achieve the desired results.
+Furthermore, we embarked on a journey to fine-tune this model. The aim is to label pairs of CV and job ad with our own similarity score, derived from the cosine similarity to optimize the score regarding the mutual skills. The idea of this approach is to simulate a real history of matches between candidates and job ads, and fine tune a [model]([https://huggingface.co/eliot-hub/en_pipeline](https://huggingface.co/eliot-hub/sentence_transformer) to generalize these matches. This custom however, is still in progress and hasn't yet demonstrated its efficiency. We continue to refine it to achieve the desired results.
 
 ## Data sources
 - [Resume dataset](https://www.kaggle.com/datasets/dataturks/resume-entities-for-ner) from Kaggle
