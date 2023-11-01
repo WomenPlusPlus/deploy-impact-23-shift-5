@@ -9,27 +9,28 @@
 </div>
 
 
-# About The Project
+# About The Project 📣
 <div align="center">
 
   <p>Founded on the principles of equality and digital education, EntryTech Hub brings together a coalition of forward-thinking associations, tech companies, and job seekers. We believe that everyone, regardless of their background or experience, should have access to the limitless possibilities of the digital world.
 At EntryTech Hub, we are more than just a digital platform. We are a community-driven initiative with a mission to empower individuals, foster inclusivity, and create opportunities in the tech industry.</p>
   <a href="https://deploy-impact-23-shift-5-hq2p.vercel.app/">EntryTech Hub</a>
   
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 </div>
 
 ## Table of Contents
-- [About The Project](#about-the-project)
-- [Overview](#overview)
-- [UX/UI](#uxui)
-- [Data Science](#data-science)
-- [How to run](#how-to-run)
-- [License](#license)
-- [Tech Stack](#built-with)
-- [Meet the team](#meet-the-team)
+- [About The Project 📣](#about-the-project)
+- [Overview 💡](#overview)
+- [UX/UI 🎨](#uxui)
+- [Data Science ⚙️](#data-science)
+- [How to run 🚀](#how-to-run)
+- [License 📝](#license)
+- [Tech Stack 🚧](#built-with)
+- [Meet the team ☕️](#meet-the-team)
 
-# Overview
+
+# Overview 💡
 This project developing for the Tech industry which is often inaccessible for underrepresented groups, causing candidates to struggle in finding suitable job opportunities. Companies find it challenging to discover diverse talent, and associations face difficulties reaching potential candidates and like-minded organizations. Administrators need an efficient system to manage user activities.
 
 ## Why we created this platform
@@ -40,12 +41,13 @@ For each persona, we figured out and came up with the following questions:
 Identified the Persona’s Wants, Problem Statement, Pain Points, User Journey Map, Empathy Mapping, Point of View and How Might We Questions as an ideation phase that helps to open up the design challenge and inspire brainstorms and other ideation sessions to generate a wide range of solutions. The User Flows were created as a result of the data we collected during the steps above.
 
 The documents of the whole process for each persona:
-- [Candidate](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Candidate.pdf)
+- Candidate : [Userflow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Candidate.pdf) / [Research](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Candidate.pdf)
 - [Company](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Company.pdf)
 - [Association](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Association.pdf)
 - [Administrator](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Administrator.pdf)
 
-# UX/UI 
+
+# UX/UI 🎨
 ## Design
 The whole design process was accomplished within Figma. During the development process, we faced a few interesting challenges that brought us to a very interesting design process.
 
@@ -68,7 +70,7 @@ Moreover, as we mentioned earlier, we designed the interface within the Associat
 And from our perspective we designed an invitation **Email** how it could look, not to mention we keep it on our Road Map.
 
 
-# Data Science
+# Data Science ⚙️
 ## Overview
 By leveraging data science and machine learning, our EntryTech Hub strives to bridge the diversity gap in the tech industry, making it more inclusive and representative of different backgrounds and experiences.
 This machine learning solution addresses the task of extracting keywords, such as job titles, skills, and education, from resumes and job advertisements. It then utilizes a sentence transformer model to calculate the similarity between these lists of keywords. This technology can greatly assist in matching job seekers with suitable job opportunities by effectively understanding the context and relevance of keywords. Our Name Entity Recognition model is designed to strictly avoid the use of personal information in our recommendation system.
@@ -88,7 +90,8 @@ Furthermore, we embarked on a journey to fine-tune this model. The aim is to lab
 - [Resume dataset](https://www.kaggle.com/datasets/dataturks/resume-entities-for-ner) from Kaggle
 - [Job ads dataset](https://www.kaggle.com/datasets/dilshaansandhu/international-jobs-dataset) from Kaggle
 
-# How to run
+
+# How to run 🚀
 ## Local run
 1. Clone the repository;
 2. Open terminal
@@ -102,13 +105,12 @@ Furthermore, we embarked on a journey to fine-tune this model. The aim is to lab
 10. Visit [127.0.0.1:8000](http://127.0.0.1:8000) on Your browser.
 
 
-# License
+# License 📝
 
 Distributed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for more information.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-# Built With
+# Built With 🚧
 
 * ![React][React.js]
 * ![Typescript][Typescript]
@@ -117,19 +119,19 @@ Distributed under the GNU General Public License v3.0. See [LICENSE](LICENSE) fo
 * ![Vercel][Vercel]
 
 
-# Meet the team
+# Meet the team ☕️
 
 | Name | Role | Links |
 |------|------|-------|
-| Aidas Petryla | Backend Developer | link |
-| Eliot Lebeau | Data Scientist | link |
-| Kyrylo Liakhovets | UX/UI Designer | link |
-| Lydia Lavecchia | Fullstack Developer | link |
-| Sophie Goger | Fullstack Developer | link |
-| Suganya Nagarajan | Backend Developer | link |
-| Temitayo Ajayi | Project Manager | link |
+| Aidas Petryla | Backend Developer | [LinkedIn](https://www.linkedin.com/in/aidas-petryla-a8a770207/) - [Github](https://github.com/apetryla) |
+| Eliot Lebeau | Data Scientist | [LinkedIn](https://www.linkedin.com/in/eliot-lebeau/) - [Github](https://github.com/eliot-hub) |
+| Kyrylo Liakhovets | UX/UI Designer | [LinkedIn](https://www.linkedin.com/in/zefirdsgn/) - [Github](https://github.com/zefirdsgn) |
+| Lydia Lavecchia | Fullstack Developer | [LinkedIn](https://www.linkedin.com/in/lydialavecchia/) - [Github](https://github.com/iamlydial) |
+| Sophie Goger | Fullstack Developer | [LinkedIn](https://www.linkedin.com/in/gogers/) - [Github](https://github.com/Jeyl) |
+| Suganya Nagarajan | Backend Developer | [LinkedIn](https://www.linkedin.com/in/suganya-nagarajan-549299154/) - [Github](https://github.com/suganyanagarajan20) |
+| Temitayo Ajayi | Project Manager | [LinkedIn](https://www.linkedin.com/in/temitayo-ajayi/) |
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
