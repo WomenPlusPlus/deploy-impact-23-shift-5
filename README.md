@@ -20,10 +20,12 @@ At EntryTech Hub, we are more than just a digital platform. We are a community-d
 </div>
 
 ## Table of Contents
-- [About The Project 📣](#about-the-project)
-- [Overview 💡](#overview)
-- [UX/UI 🎨](#uxui)
-- [Data Science ⚙️](#data-science)
+- [About The Project 📣](#about-the-project-📣)
+- [Overview 💡](#overview-💡)
+- [UX/UI 🎨](#uxui-🎨)
+- [Backend ⚙️](#backend-⚙️)
+- [Frontend 💻](#frontend-💻)
+- [Data Science 🔧](#data-science-🔧)
 - [How to run 🚀](#how-to-run)
 - [License 📝](#license)
 - [Tech Stack 🚧](#built-with)
@@ -41,10 +43,10 @@ For each persona, we figured out and came up with the following questions:
 Identified the Persona’s Wants, Problem Statement, Pain Points, User Journey Map, Empathy Mapping, Point of View and How Might We Questions as an ideation phase that helps to open up the design challenge and inspire brainstorms and other ideation sessions to generate a wide range of solutions. The User Flows were created as a result of the data we collected during the steps above.
 
 The documents of the whole process for each persona:
-- Candidate : [Userflow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Candidate.pdf) / [Research](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Candidate.pdf)
-- [Company](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Company.pdf)
-- [Association](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Association.pdf)
-- [Administrator](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/UX-UI/Persona_Administrator.pdf)
+- Candidate : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Candidate.pdf) / [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Candidate.pdf)
+- Company : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Company.pdf) / [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Company.pdf)
+- Association : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Association.pdf) - [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Association.pdf)
+- Administrator : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Administrator.pdf) - [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Admin.pdf)
 
 
 # UX/UI 🎨
@@ -70,7 +72,25 @@ Moreover, as we mentioned earlier, we designed the interface within the Associat
 And from our perspective we designed an invitation **Email** how it could look, not to mention we keep it on our Road Map.
 
 
-# Data Science ⚙️
+# Backend ⚙️
+## Overview
+In this project, we have leveraged the power of Python-Django for the backend, creating a robust and extensible application framework. Our data is stored and managed efficiently in a PostgreSQL database hosted by Supabase, ensuring security and scalability. This combination allows us to deliver a high-performance, data-driven web application with a versatile and user-friendly interface, making it well-suited for a wide range of applications and industries.
+
+We've harnessed the power of Pony ORM to define and manage the underlying data structure efficiently. By creating Django models for personas, candidates, associations, and companies, we've established a strong foundation for our application. Using Pony ORM's capabilities, we've also generated an entity relationship diagram, providing a visual representation of how our data entities are interconnected. Furthermore, we've integrated Supabase's API to handle user authentication, ensuring secure access to our application. 
+
+## ER diagrams
+
+- [Association](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/Backend/Association.pdf)
+- [Candidate](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/Backend/Candidate.pdf)
+- [Company](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/Backend/Company.pdf)
+
+
+# Frontend 💻
+## Overview
+TBD
+
+
+# Data Science 🔧
 ## Overview
 By leveraging data science and machine learning, our EntryTech Hub strives to bridge the diversity gap in the tech industry, making it more inclusive and representative of different backgrounds and experiences.
 This machine learning solution addresses the task of extracting keywords, such as job titles, skills, and education, from resumes and job advertisements. It then utilizes a sentence transformer model to calculate the similarity between these lists of keywords. This technology can greatly assist in matching job seekers with suitable job opportunities by effectively understanding the context and relevance of keywords. Our Name Entity Recognition model is designed to strictly avoid the use of personal information in our recommendation system.
@@ -101,8 +121,11 @@ Furthermore, we embarked on a journey to fine-tune this model. The aim is to lab
 6. Run `npm run dev`
 7. Open another terminal
 8. Navigate to _backend_ directory
-9. Run `python manage.py runserver`
-10. Visit [127.0.0.1:8000](http://127.0.0.1:8000) on Your browser.
+9. Run `pip install -r requirements.txt`
+10. Run `python manage.py makemigrations`
+11. Run `python manage.py migrate`
+12. Run `python manage.py runserver`
+13. Visit [127.0.0.1:8000](http://127.0.0.1:8000) on Your browser.
 
 
 # License 📝
@@ -117,6 +140,7 @@ Distributed under the GNU General Public License v3.0. See [LICENSE](LICENSE) fo
 * ![Django][django]
 * ![Supabase][Supabase]
 * ![Vercel][Vercel]
+* ![Hugging Face][HuggingFace]
 
 
 # Meet the team ☕️
@@ -140,5 +164,6 @@ Distributed under the GNU General Public License v3.0. See [LICENSE](LICENSE) fo
 [django]: https://img.shields.io/badge/Django-20232A?style=for-the-badge&labelColor=white&logo=django&logoColor=%23092E20
 [Supabase]: https://img.shields.io/badge/Supabase-20232A?style=for-the-badge&labelColor=white&logo=Supabase&logoColor=#3FCF8E
 [Vercel]: https://img.shields.io/badge/Vercel-20232A?style=for-the-badge&logo=Vercel&logoColor=#000000
+[HuggingFace]: https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow
 
 
