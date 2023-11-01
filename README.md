@@ -9,7 +9,7 @@
 </div>
 
 
-# About The Project 📣
+# About The Project :mega:
 <div align="center">
 
   <p>Founded on the principles of equality and digital education, EntryTech Hub brings together a coalition of forward-thinking associations, tech companies, and job seekers. We believe that everyone, regardless of their background or experience, should have access to the limitless possibilities of the digital world.
@@ -20,16 +20,16 @@ At EntryTech Hub, we are more than just a digital platform. We are a community-d
 </div>
 
 ## Table of Contents
-- [About The Project 📣](#about-the-project-📣)
-- [Overview 💡](#overview-💡)
-- [UX/UI 🎨](#uxui-🎨)
-- [Backend ⚙️](#backend-⚙️)
-- [Frontend 💻](#frontend-💻)
-- [Data Science 🔧](#data-science-🔧)
-- [How to run 🚀](#how-to-run)
-- [License 📝](#license)
-- [Tech Stack 🚧](#built-with)
-- [Meet the team ☕️](#meet-the-team)
+- [About The Project](#about-the-project-mega)
+- [Overview](#overview-bulb)
+- [UX/UI](#uxui-art)
+- [Backend ⚙️](#backend-nut_and_bolt)
+- [Frontend](#frontend-computer)
+- [Data Science](#data-science-wrench)
+- [How to run](#how-to-run-rocket)
+- [License](#license-pencil)
+- [Tech Stack](#built-with-construction)
+- [Meet the team](#meet-the-team-coffee)
 
 
 # Overview 💡
@@ -49,7 +49,7 @@ The documents of the whole process for each persona:
 - Administrator : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Administrator.pdf) - [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Admin.pdf)
 
 
-# UX/UI 🎨
+# UX/UI :art:
 ## Design
 The whole design process was accomplished within Figma. During the development process, we faced a few interesting challenges that brought us to a very interesting design process.
 
@@ -72,7 +72,7 @@ Moreover, as we mentioned earlier, we designed the interface within the Associat
 And from our perspective we designed an invitation **Email** how it could look, not to mention we keep it on our Road Map.
 
 
-# Backend ⚙️
+# Backend :nut_and_bolt:
 ## Overview
 In this project, we have leveraged the power of Python-Django for the backend, creating a robust and extensible application framework. Our data is stored and managed efficiently in a PostgreSQL database hosted by Supabase, ensuring security and scalability. This combination allows us to deliver a high-performance, data-driven web application with a versatile and user-friendly interface, making it well-suited for a wide range of applications and industries.
 
@@ -85,12 +85,12 @@ We've harnessed the power of Pony ORM to define and manage the underlying data s
 - [Company](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/Backend/Company.pdf)
 
 
-# Frontend 💻
+# Frontend :computer:
 ## Overview
 TBD
 
 
-# Data Science 🔧
+# Data Science :wrench:
 ## Overview
 By leveraging data science and machine learning, our EntryTech Hub strives to bridge the diversity gap in the tech industry, making it more inclusive and representative of different backgrounds and experiences.
 This machine learning solution addresses the task of extracting keywords, such as job titles, skills, and education, from resumes and job advertisements. It then utilizes a sentence transformer model to calculate the similarity between these lists of keywords. This technology can greatly assist in matching job seekers with suitable job opportunities by effectively understanding the context and relevance of keywords. Our Name Entity Recognition model is designed to strictly avoid the use of personal information in our recommendation system.
@@ -111,7 +111,7 @@ Furthermore, we embarked on a journey to fine-tune this model. The aim is to lab
 - [Job ads dataset](https://www.kaggle.com/datasets/dilshaansandhu/international-jobs-dataset) from Kaggle
 
 
-# How to run 🚀
+# How to run :rocket:
 ## Local run
 1. Clone the repository;
 2. Open terminal
@@ -128,12 +128,12 @@ Furthermore, we embarked on a journey to fine-tune this model. The aim is to lab
 13. Visit [127.0.0.1:8000](http://127.0.0.1:8000) on Your browser.
 
 
-# License 📝
+# License :pencil:
 
 Distributed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for more information.
 
 
-# Built With 🚧
+# Built With :construction:
 
 * ![React][React.js]
 * ![Typescript][Typescript]
@@ -143,7 +143,7 @@ Distributed under the GNU General Public License v3.0. See [LICENSE](LICENSE) fo
 * ![Hugging Face][HuggingFace]
 
 
-# Meet the team ☕️
+# Meet the team :coffee:
 
 | Name | Role | Links |
 |------|------|-------|
