@@ -23,7 +23,7 @@ At EntryTech Hub, we are more than just a digital platform. We are a community-d
 - [About The Project](#about-the-project-mega)
 - [Overview](#overview-bulb)
 - [UX/UI](#uxui-art)
-- [Backend ⚙️](#backend-nut_and_bolt)
+- [Backend](#backend-nut_and_bolt)
 - [Frontend](#frontend-computer)
 - [Data Science](#data-science-wrench)
 - [How to run](#how-to-run-rocket)
@@ -32,7 +32,7 @@ At EntryTech Hub, we are more than just a digital platform. We are a community-d
 - [Meet the team](#meet-the-team-coffee)
 
 
-# Overview 💡
+# Overview :bulb:
 This project developing for the Tech industry which is often inaccessible for underrepresented groups, causing candidates to struggle in finding suitable job opportunities. Companies find it challenging to discover diverse talent, and associations face difficulties reaching potential candidates and like-minded organizations. Administrators need an efficient system to manage user activities.
 
 ## Why we created this platform
