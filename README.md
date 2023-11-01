@@ -43,8 +43,8 @@ For each persona, we figured out and came up with the following questions:
 Identified the Persona’s Wants, Problem Statement, Pain Points, User Journey Map, Empathy Mapping, Point of View and How Might We Questions as an ideation phase that helps to open up the design challenge and inspire brainstorms and other ideation sessions to generate a wide range of solutions. The User Flows were created as a result of the data we collected during the steps above.
 
 The documents of the whole process for each persona:
-- Candidate : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Candidate.pdf) / [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Candidate.pdf)
-- Company : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Company.pdf) / [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Company.pdf)
+- Candidate : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Candidate.pdf) - [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Candidate.pdf)
+- Company : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Company.pdf) - [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Company.pdf)
 - Association : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Association.pdf) - [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Association.pdf)
 - Administrator : [Persona](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/Persona_Administrator.pdf) - [User flow](https://github.com/WomenPlusPlus/deploy-impact-23-shift-5/blob/main/docs/UX-UI/User_Flow_Admin.pdf)
 
