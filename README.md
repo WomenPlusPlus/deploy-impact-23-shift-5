@@ -76,7 +76,7 @@ And from our perspective we designed an invitation **Email** how it could look, 
 ## Overview
 In this project, we have leveraged the power of Python-Django for the backend, creating a robust and extensible application framework. Our data is stored and managed efficiently in a PostgreSQL database hosted by Supabase, ensuring security and scalability. This combination allows us to deliver a high-performance, data-driven web application with a versatile and user-friendly interface, making it well-suited for a wide range of applications and industries.
 
-We've harnessed the power of Pony ORM to define and manage the underlying data structure efficiently. By creating Django models for personas, candidates, associations, and companies, we've established a strong foundation for our application. Using Pony ORM's capabilities, we've also generated an entity relationship diagram, providing a visual representation of how our data entities are interconnected. Furthermore, we've integrated Supabase's API to handle user authentication, ensuring secure access to our application. 
+We've harnessed the power of Pony ORM to define and manage the underlying data structure efficiently. By creating Django models for the personas - candidates, associations, and companies, we've established a strong foundation for our application. Using Pony ORM's capabilities, we've also generated an entity relationship diagram, providing a visual representation of how our data entities are interconnected. Furthermore, we've integrated Supabase's API to handle user authentication, ensuring secure access to our application. 
 
 ## ER diagrams
 
