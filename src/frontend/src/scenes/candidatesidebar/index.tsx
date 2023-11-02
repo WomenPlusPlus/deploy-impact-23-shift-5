@@ -7,6 +7,7 @@ import {
   ListItem,
   ListItemPrefix,
 } from "@material-tailwind/react";
+import EntryTechHubLogo from '@/assets/logo_Black_Small.svg'
 
 type CandidateSidebarProps = {
   switchSection: (section: string) => void;
@@ -22,14 +23,21 @@ const CandidateSidebar: React.FC<CandidateSidebarProps> = ({ switchSection }) =>
 
  
   return (
-    <Card className="h-100vh w-full p-3 shadow-xl shadow-blue-gray-900/5">
-      <div className="mb-2 flex items-center gap-4 p-0 b-2">
-      <Avatar src="./src/assets/candidates/EmilyPicture.png" alt="Picture" className="rounded-full  flex-shrink-0 border-purple-70 border-1 h-14.2 w-14.2" />
-        <div>
-          <Typography variant="h6">Emily</Typography>
-          <Typography variant="small" color="gray" className="font-normal">
-            Web Developer
-          </Typography>
+    <Card className="h-[calc(110vh)] w-12/12 p-3 shadow-xl shadow-blue-gray-900/5">
+      <div className="mb-2 flex-col items-center justify-center gap-4 p-0 b-2">
+        <div className="flex flex-row justify-center p-5">
+          <img className="" src={EntryTechHubLogo} />
+        </div>
+        <div className="flex flex-row justify-center">
+          <div className="flex flex-col pr-4">
+            <Avatar src="./src/assets/candidates/EmilyPicture.png" alt="Picture" className="w-[80px] border-purple-70 border-2 rounded-full flex-shrink-01" />
+          </div>
+          <div className="flex flex-col">
+            <Typography variant="h6">Emily</Typography>
+            <Typography variant="small" color="gray" className="font-normal">
+              Telecommunications
+            </Typography>
+          </div>
         </div>
       </div>
       <div className="m-2 flex-wrap items-center gap-4 pt-6">
