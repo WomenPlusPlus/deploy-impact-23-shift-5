@@ -1,5 +1,4 @@
 import React from "react";
-import emilypicture from "/src/assets/candidates/EmilyPicture.png"
 import MailIcon from "/src/assets/candidates/mail_outline.png"
 import MatchesIcon from "/src/assets/candidates/Games.png"
 import InitiativesIcon from "/src/assets/candidates/Grading.png"
@@ -8,7 +7,8 @@ import SearchIcon from "/src/assets/candidates/Search.png"
 import FavoritesIcon from "/src/assets/candidates/favorite.png"
 import MyApplicationIcon from  "/src/assets/candidates/Description.png"
 import helpIcon from  "/src/assets/candidates/Vector.png"
-import swissComIcon from "/src/assets/swissComIcon.png"
+import swissComIcon from "/src/assets/SwissComLogo.png"
+
 import {
   Card,
   Avatar,
