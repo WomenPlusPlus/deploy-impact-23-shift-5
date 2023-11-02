@@ -13,7 +13,7 @@ type Props = {
 
 const AboutPlatform = ({ setSelectedPage }: Props) => {
   return (
-        <section id="about-platform" className="bg-white flex flex-col md:h-auto md:pb-0  ">
+        <section id="aboutplatform" className="bg-white flex flex-col md:h-auto md:pb-0  ">
            <div className="flex flex-col items-start p-10 md:pl-40 ">
                 <div className="flex flex-row md:w-full md:gap-8 md:p-10">
                     <h1 className="flex flex-row w-full text-3xl font-bold pt-12 ">About Platform</h1>

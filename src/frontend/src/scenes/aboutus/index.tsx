@@ -11,7 +11,7 @@ type Props = {
 
 const AboutUs = ({ setSelectedPage }: Props) => {
   return (
-    <section id="about-us" className="bg-white flex flex-col justify-center items-center md:h-auto md:w-full md:pb-0 md:px-40">
+    <section id="aboutus" className="bg-white flex flex-col justify-center items-center md:h-auto md:w-full md:pb-0 md:px-40">
         <div className="flex flex-col w-10/12 md:flex-row md:w-full md:gap-8 md:p-10 ">
                 <div className="flex flex-col md:flex-col md:w-5/12">
                     <h1 className="flex flex-row w-full text-3xl font-bold pt-12">About Us</h1>
