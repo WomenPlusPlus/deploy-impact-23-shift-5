@@ -3,6 +3,11 @@ import emilypicture from "/src/assets/candidates/EmilyPicture.png"
 import MailIcon from "/src/assets/candidates/mail_outline.png"
 import MatchesIcon from "/src/assets/candidates/Games.png"
 import InitiativesIcon from "/src/assets/candidates/Grading.png"
+import OverviewIcon from "/src/assets/candidates/icon-dashboard.png"
+import SearchIcon from "/src/assets/candidates/Search.png"
+import FavoritesIcon from "/src/assets/candidates/favorite.png"
+import MyApplicationIcon from  "/src/assets/candidates/Description.png"
+import helpIcon from  "/src/assets/candidates/Vector.png"
 
 import {
   Card,
@@ -58,7 +63,7 @@ const CandidateSidebar: React.FC<CandidateSidebarProps> = ({ switchSection }) =>
           <hr className="my-2 border-blue-gray-50" />
           <ListItem className="p-2.5 mb-2 mt-2" selected={open === 0}>
               <ListItemPrefix>
-                <img src="/src/assets/candidates/icon-dashboard.png" className="h-6 w-6 mr-1"/>
+                <img src={OverviewIcon} className="h-6 w-6 mr-1"/>
               </ListItemPrefix>
               <Typography className="mr-auto font-bold text-sm/[17px] font-roboto text-purple-70">
                 Overview
@@ -67,7 +72,7 @@ const CandidateSidebar: React.FC<CandidateSidebarProps> = ({ switchSection }) =>
           <hr className="my-2 #CAC5CD" />
           <ListItem className="p-2.5 mb-6" selected={open === 0}>
               <ListItemPrefix>
-                <img src="/src/assets/candidates/Search.png" className="h-6 w-6 mr-1"/>
+                <img src={SearchIcon} className="h-6 w-6 mr-1"/>
               </ListItemPrefix>
               <Typography className="mr-auto font-bold text-sm/[17px] font-roboto  text-purple-70">
                 Search
@@ -75,7 +80,7 @@ const CandidateSidebar: React.FC<CandidateSidebarProps> = ({ switchSection }) =>
           </ListItem> 
           <ListItem className="mb-6 p-2.5 " selected={open === 0}>
               <ListItemPrefix>
-                <img src="/src/assets/candidates/favorite.png" className="h-6 w-6 mr-1"/>
+                <img src={FavoritesIcon} className="h-6 w-6 mr-1"/>
               </ListItemPrefix>
               <Typography className="mr-auto font-bold text-sm/[17px] font-roboto text-purple-70">
                 Favorites
@@ -101,7 +106,7 @@ const CandidateSidebar: React.FC<CandidateSidebarProps> = ({ switchSection }) =>
           </ListItem> 
           <ListItem className="p-2.5 mb-6" selected={open === 0}>
               <ListItemPrefix>
-                <img src="/src/assets/candidates/Description.png" className="h-6 w-6 mr-1"/>
+                <img src={MyApplicationIcon} className="h-6 w-6 mr-1"/>
               </ListItemPrefix>
               <Typography className="mr-auto font-bold text-sm/[17px] font-roboto text-purple-70">
                 My Application
@@ -109,7 +114,7 @@ const CandidateSidebar: React.FC<CandidateSidebarProps> = ({ switchSection }) =>
           </ListItem> 
           <ListItem className="p-2.5 " selected={open === 0}>
               <ListItemPrefix>
-                <img src="/src/assets/candidates/Vector.png" className="h-6 w-6 mr-1"/>
+                <img src={helpIcon} className="h-6 w-6 mr-1"/>
               </ListItemPrefix>
               <Typography className="mr-auto font-bold text-sm/[17px] font-roboto text-purple-70">
                 Help

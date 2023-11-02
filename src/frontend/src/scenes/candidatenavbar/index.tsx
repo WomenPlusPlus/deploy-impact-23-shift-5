@@ -2,7 +2,15 @@ import {
     Avatar,
     Typography,
 } from "@material-tailwind/react";
-
+import emilypicture from "/src/assets/candidates/EmilyPicture.png"
+import MailIcon from "/src/assets/candidates/mail_outline.png"
+import MatchesIcon from "/src/assets/candidates/Games.png"
+import InitiativesIcon from "/src/assets/candidates/Grading.png"
+import OverviewIcon from "/src/assets/candidates/icon-dashboard.png"
+import SearchIcon from "/src/assets/candidates/Search.png"
+import FavoritesIcon from "/src/assets/candidates/favorite.png"
+import MyApplicationIcon from  "/src/assets/candidates/Description.png"
+import helpIcon from  "/src/assets/candidates/Vector.png"
 
 
 export function CandidateNavbar() {
@@ -18,7 +26,7 @@ export function CandidateNavbar() {
                                 <input type="search" id="default-search"
                                     className="block w-full p-4 pl-10 text-sm text-gray-900 border bg-gray-50 rounded-full" placeholder="Initiatives" />
                                 <div className="absolute inset-y-2 right-4 flex items-center pl-3 pointer-events-none">
-                                    <img src="./src/assets/candidates/Search.png" alt="" />
+                                    <img src={SearchIcon} alt="" />
                                 </div>
                             </div>
                         </form>
@@ -56,7 +64,7 @@ export function CandidateNavbar() {
                             </li>
                             <li className=" p-2">
                                 <div>
-                                    <Avatar src="./src/assets/candidates/EmilyPicture.png" alt="Picture" className="rounded-full  border-purple-70 border-1 h-5 w-5" />
+                                    <Avatar src={emilypicture} alt="Picture" className="rounded-full  border-purple-70 border-1 h-5 w-5" />
                                 </div>
                             </li>
                             <li className=" p-2">
