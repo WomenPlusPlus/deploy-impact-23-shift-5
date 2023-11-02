@@ -1,6 +1,5 @@
 import ActionButtonTransparentMagenta from "@/shared/ActionButtonTransparentMagenta";
-import { SelectedPage } from "@/shared/types";
-
+import { SelectedPage } from "@/shared/types"
 import OurThinkingImage from "@/assets/OurThinkingImage.png"
 import AboutPlatformPinkArrow from '@/assets/about-platform-pink-arrow.png'
 
@@ -57,9 +56,7 @@ const OurThinking = ({setSelectedPage}: Props) => {
               </div>
   
           </div>
-          <div className="flex flex-row py-10">
-              <ActionButtonTransparentMagenta setSelectedPage={setSelectedPage}>Sign Up Now</ActionButtonTransparentMagenta>
-          </div>
+          
         </div>
         </div>
     </section>
