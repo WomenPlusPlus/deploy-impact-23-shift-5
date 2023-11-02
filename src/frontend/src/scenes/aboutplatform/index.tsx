@@ -61,7 +61,7 @@ const AboutPlatform = ({ setSelectedPage }: Props) => {
             {/* companies */}
                <div className="flex flex-col items-start p-10 md:pr-40 ">
                 <div className="flex flex-col md:flex-row w-full">
-                <div className="hidden md:block flex flex-col md:w-5/12">
+                <div className="md:block flex flex-col md:w-5/12">
                     <img className="" src={AboutPlatformMan} />
                 </div>
                     <div className="md:w-9/12 md:pl-10">
