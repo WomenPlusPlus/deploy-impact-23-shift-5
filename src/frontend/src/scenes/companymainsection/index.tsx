@@ -10,7 +10,7 @@ type Props = {}
 
 const CompanyMainSection = (props: Props) => {
   return (
-    <div className='flex flex-col max-md max-w-max items-center align-top bg-slate-50 p-10 border border-red-500'>
+    <div className='flex flex-col max-md max-w-max items-center align-top bg-slate-50 p-10 border'>
     <div className='flex flex-col w-10/12 rounded-lg gap-y-5'>
         {/* profile header */}
         <div className='flex flex-row w-full bg-white rounded-2xl p-4'>
