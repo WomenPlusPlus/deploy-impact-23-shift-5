@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./scenes/navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";

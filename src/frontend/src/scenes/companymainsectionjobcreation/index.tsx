@@ -1,5 +1,5 @@
 import SwissComLogo from '@/assets/SwissComLogo.png'
-import EditPencilButton from '@/assets/EditPencilButton.png'
+
 type Props = {}
 
 const CompanyMainSectionJobCreation = (props: Props) => {
